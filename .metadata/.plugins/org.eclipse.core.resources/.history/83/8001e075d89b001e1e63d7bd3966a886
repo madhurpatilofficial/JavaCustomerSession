@@ -1,0 +1,16 @@
+package com.example.demo;
+
+@RestController
+public class ApiMapping {
+
+	@GetMapping("/")
+	public String homePage() {
+		return "This is a Home Page Content";
+	}
+	
+	@GetMapping("/about")
+	public String aboutPage() {
+		return "This is About US";
+	}
+	
+}
